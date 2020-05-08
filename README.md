@@ -30,11 +30,20 @@ At the begining of the script the User will be presented with 4 varriable inputs
       
             For direct reference see 'pn_asv_relabund_osp.csv' 
    
-   - Var.3 <- This varriable is assinged the exact number of ASVs that you will be inputing in the Var.2 csv 
+  - Var.3 <- This varriable is assinged the exact number of ASVs that you will be inputing in the Var.2 csv 
               (for this example Var.3 = 10 since we are breaking out the genus into 10 ASVs) 
               
-   - Var.4 <- This varriable is assigned the name of the Genus or Class in the Var.1 csv that you want to break out into ASVs
+  - Var.4 <- This varriable is assigned the name of the Genus or Class in the Var.1 csv that you want to break out into ASVs
               (This must EXATLY match the name of the column in the Var.1 csv, or there will be resulting errors) 
 
-After inputing all variables, run the R script one section at a time, and after runing the final section a Relative Abundance 
-Plot of the new ASVs alongside the previously identified genera/classes will be generated for use.  
+After inputing all variables, run the R script one section at a time until you reach the optional renaming section, *if you do 
+not input your own names as detailed below, skip this line*. 
+
+      Assigning Taxonomy to your ASVs (Optional): 
+      This is a manual process; as long as your ASVs followed the proper format for var.2, the only thing that should need to 
+      be changed is the new names of the ASVs (these must be in double quotes ("new_name" = "ASVn_Ratio_RelAbun" with n being                     
+      the number ASV you want to reassign) these can be removed or added in accordance with the ammount of ASVs that you want 
+      to assign new names. 
+
+After runing the final section a Relative Abundance Plot of the new ASVs alongside the previously identified genera/classes 
+will be generated for use. 
